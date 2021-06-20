@@ -57,7 +57,7 @@ do
 	fi
 
 	A=`cat "$MODDIR/module.prop" | grep 'VersionNumber=' | awk -F '=' '{print $2}'`
-	B=`. $MODDIR/Redirect.prop && echo $VersionNumber`
+	B=`source $MODDIR/Redirect.prop && echo $VersionNumber`
 	if [[ "$A" -lt "$B" ]]; then
 		[[ -f $MODDIR/Run_Redirect.sh ]] && rm -rf $MODDIR/Run_Redirect.sh
 
@@ -82,7 +82,7 @@ do
 			sleep 1
 		done
 
-		sed -i "/^description=/c description=将第三方应用的下载目录定向至 [ sdcard/Download/第三方应用下载目录 ] ，实时同步（类似于电脑的共享文件夹）。当前重定向文件版本:【$B】" "$MODDIR/module.prop"
+		sed -i "/^description=/c description=$(source $MODDIR/Redirect.prop && echo $description) 当前重定向文件版本:【$B】" "$MODDIR/module.prop"
 		sed -i "/^VersionNumber=/c VersionNumber=$B" "$MODDIR/module.prop"
 	fi
 	[[ -f $MODDIR/Redirect.prop ]] && rm -rf $MODDIR/Redirect.prop
