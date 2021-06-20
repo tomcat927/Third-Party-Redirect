@@ -86,5 +86,5 @@ do
 		sed -i "/^VersionNumber=/c VersionNumber=$B" "$MODDIR/module.prop"
 	fi
 	[[ -f $MODDIR/Redirect.prop ]] && rm -rf $MODDIR/Redirect.prop
-	sleep 600
+	sleep 1800
 done
