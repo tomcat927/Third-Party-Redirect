@@ -2,18 +2,17 @@
 # Cloud Configuration
 # 酷安@阿巴酱(Petit Abba)
 # 所有路径都已验证(√)
-Version="202106170313"
+Version="202106201654"
 
 MODDIR="$(dirname $(readlink -f "$0"))"
 [[ -f $MODDIR/files/Variable.sh ]] && . $MODDIR/files/Variable.sh
-[[ -d /data/media/0/Download ]] && path="Download" || path="download"
+[[ -d /storage/emulated/0/Download ]] && path="Download" || path="download"
 [[ ! -z $(which curl) ]] && Binary_System="$(which curl)" || Binary_System="$(which wget)"
 MyPrintt() { [[ "$MODDIR" == "/data/adb/modules/Third_Party_Redirect" ]] && echo "$@" > $DirectionalPath/$Version.txt ; }
 MyPrint() { [[ "$MODDIR" == "/data/adb/modules/Third_Party_Redirect" ]] && echo "$@" >> $DirectionalPath/$Version.txt || echo "$@" ; }
 
-DirectionalPath="/data/media/0/$path/第三方应用下载目录/-定向记录与配置"
+DirectionalPath="/storage/emulated/0/$path/第三方应用下载目录/-定向记录与配置"
 [[ ! -d $DirectionalPath ]] && mkdir -p $DirectionalPath
-[[ -d /data/media/0/$path/第三方应用下载目录/A定向记录 ]] && rm -rf /data/media/0/$path/第三方应用下载目录/A定向记录/
 [[ ! -f $DirectionalPath/-定向黑名单.conf ]] && { echo '# 把不需要定向的文件夹名称填写进来（一行一个）
 
 OFF="
@@ -378,12 +377,18 @@ done
 
 MyPrint ">>执行完毕<<"
 
-if [[ ! -f $DirectionalPath/-一键执行.sh ]]; then
-	echo "#!/system/bin/sh
+echo "#!/system/bin/sh
 	if [[ -f $DirectionalPath/-定向黑名单.conf.bak ]]; then
 		rm -rf $DirectionalPath/-定向黑名单.conf.bak
 	fi
-	source $0" > $DirectionalPath/-一键执行.sh
-fi
+
+	{
+		source $0
+	}&
+
+	{
+		sh $0
+	}&
+" > $DirectionalPath/-一键执行.sh
 
 sleep 10
