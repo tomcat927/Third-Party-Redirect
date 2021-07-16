@@ -2,7 +2,7 @@
 # Cloud Configuration
 # 酷安@阿巴酱(Petit Abba)
 # 所有路径都已验证(√)
-Version="202106201758"
+Version="202107161738"
 
 MODDIR="$(dirname $(readlink -f "$0"))"
 [[ -f $MODDIR/files/Variable.sh ]] && . $MODDIR/files/Variable.sh
