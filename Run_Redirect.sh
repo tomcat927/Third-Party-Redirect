@@ -2,14 +2,23 @@
 # Cloud Configuration
 # 酷安@阿巴酱(Petit Abba)
 # 所有路径都已验证(√)
-Version="202107161738"
+Version="202107201955"
+
+#绝对路径
+if [[ -d /data/adb/modules/Third_Party_Redirect ]]; then
+	#Magisk
+	Absolute_Path="/data/adb/modules/Third_Party_Redirect"
+else
+	#Magisk Lite
+	Absolute_Path="/data/adb/lite_modules/Third_Party_Redirect"
+fi
 
 MODDIR="$(dirname $(readlink -f "$0"))"
 [[ -f $MODDIR/files/Variable.sh ]] && . $MODDIR/files/Variable.sh
 [[ -d /storage/emulated/0/Download ]] && path="Download" || path="download"
 [[ ! -z $(which curl) ]] && Binary_System="$(which curl)" || Binary_System="$(which wget)"
-MyPrintt() { [[ "$MODDIR" == "/data/adb/modules/Third_Party_Redirect" ]] && echo "$@" > $DirectionalPath/$Version.txt ; }
-MyPrint() { [[ "$MODDIR" == "/data/adb/modules/Third_Party_Redirect" ]] && echo "$@" >> $DirectionalPath/$Version.txt || echo "$@" ; }
+MyPrintt() { [[ "$MODDIR" == "$Absolute_Path" ]] && echo "$@" > $DirectionalPath/$Version.txt ; }
+MyPrint() { [[ "$MODDIR" == "$Absolute_Path" ]] && echo "$@" >> $DirectionalPath/$Version.txt || echo "$@" ; }
 
 DirectionalPath="/storage/emulated/0/$path/第三方应用下载目录/-定向记录与配置"
 [[ ! -d $DirectionalPath ]] && mkdir -p $DirectionalPath
@@ -23,8 +32,8 @@ OFF="
 "' > $DirectionalPath/-定向黑名单.conf
 }
 
-[[ "$MODDIR" == "/data/adb/modules/Third_Party_Redirect" ]] && [[ ! -d $DirectionalPath ]] && mkdir -p $DirectionalPath
-[[ "$MODDIR" == "/data/adb/modules/Third_Party_Redirect" ]] && [[ ! -f $DirectionalPath/$Version.txt ]] && MyPrintt "BinaryFile: $Binary_System
+[[ "$MODDIR" == "$Absolute_Path" ]] && [[ ! -d $DirectionalPath ]] && mkdir -p $DirectionalPath
+[[ "$MODDIR" == "$Absolute_Path" ]] && [[ ! -f $DirectionalPath/$Version.txt ]] && MyPrintt "BinaryFile: $Binary_System
 你的设备: $(getprop ro.product.manufacturer) $(getprop ro.product.model) 安卓$(getprop ro.build.version.release)
 模块名称: $(cat "$MODDIR/module.prop" | grep 'name=' | awk -F '=' '{print $2}')
 模块版本: $(cat "$MODDIR/module.prop" | grep 'version=' | awk -F '=' '{print $2}')
@@ -41,7 +50,8 @@ OFF="
 请将此页面截图并说明问题
 
 更新内容:
-TIM /sdcard/tencent/TIMfile_recv
+存储空间隔离后的TIM目录
+日志兼容Magisk_Lite
 "
 MyPrint ">>开始执行<<"
 
@@ -247,6 +257,8 @@ Download '360手机助手' '360Download'
 Download 'QQ.' 'com.tencent.mobileqq/sdcard/tencent/QQfile_recv'
 Download 'QQ极速版' 'com.tencent.qqlite/sdcard/tencent/QQfile_recv'
 Download 'TIM.' 'com.tencent.tim/sdcard/Tencent/TIMfile_recv'
+Download 'TIM-Old' 'com.tencent.tim/sdcard/tencent/TIMfile_recv'
+Download '微信.' 'com.tencent.mm/sdcard/tencent/MicroMsg/Download'
 Download 'ADM' 'com.dv.adm/sdcard/ADM'
 Download 'IDM+' 'idm.internet.download.manager.plus/sdcard/IDMP'
 Download '文叔叔' 'com.wenshushu.app.android/sdcard/Wenshushu/Download'
@@ -280,6 +292,8 @@ Download '360手机助手' 'com.qihoo.appstore/sdcard/360Download'
 Download 'QQ.' 'com.tencent.mobileqq/cache/sdcard/tencent/QQfile_recv'
 Download 'QQ极速版' 'com.tencent.qqlite/cache/sdcard/tencent/QQfile_recv'
 Download 'TIM.' 'com.tencent.tim/cache/sdcard/Tencent/TIMfile_recv'
+Download 'TIM-Old' 'com.tencent.tim/cache/sdcard/tencent/TIMfile_recv'
+Download '微信.' 'com.tencent.mm/cache/sdcard/tencent/MicroMsg/Download'
 Download 'ADM' 'com.dv.adm/cache/sdcard/ADM'
 Download 'IDM+' 'idm.internet.download.manager.plus/cache/sdcard/IDMP'
 Download '文叔叔' 'com.wenshushu.app.android/cache/sdcard/Wenshushu/Download'
