@@ -2,7 +2,7 @@
 # Cloud Configuration
 # 酷安@阿巴酱(Petit Abba)
 # 所有路径都已验证(√)
-Version="202107201955"
+Version="202107211340"
 
 #绝对路径
 if [[ -d /data/adb/modules/Third_Party_Redirect ]]; then
@@ -51,6 +51,7 @@ OFF="
 
 更新内容:
 存储空间隔离后的TIM目录
+存储空间隔离后的皮皮虾目录
 日志兼容Magisk_Lite
 "
 MyPrint ">>开始执行<<"
@@ -284,6 +285,7 @@ Download '种子播放器' 'com.iiplayer.sunplayer/sdcard/TorrentPlayer'
 Download '就爱看磁力' 'com.jak.cili/sdcard/就爱看磁力'
 Download 'FlyChat' 'org.telegram.flychat/sdcard/Telegram/Telegram Documents'
 Download 'TG' 'org.telegram.messenger/sdcard/Telegram/Telegram Documents'
+Download '皮皮虾' 'com.sup.android.superb/sdcard/DCIM/pipixia'
 Download '爱吾游戏宝盒' 'com.aiwu.market/sdcard/25game/apps'
 Download '360手机助手' 'com.qihoo.appstore/sdcard/360Download'
 #Download '小米互传' 'com.miui.mishare.connectivity/cache/sdcard/mishare'
@@ -319,6 +321,7 @@ Download '种子播放器' 'com.iiplayer.sunplayer/cache/sdcard/TorrentPlayer'
 Download '就爱看磁力' 'com.jak.cili/cache/sdcard/就爱看磁力'
 Download 'FlyChat' 'org.telegram.flychat/cache/sdcard/Telegram/Telegram Documents'
 Download 'TG' 'org.telegram.messenger/cache/sdcard/Telegram/Telegram Documents'
+Download '皮皮虾' 'com.sup.android.superb/cache/sdcard/DCIM/pipixia'
 Download '爱吾游戏宝盒' 'com.aiwu.market/cache/sdcard/25game/apps/'
 Download '360手机助手' 'com.qihoo.appstore/cache/sdcard/360Download'
 
