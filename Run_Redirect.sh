@@ -2,7 +2,7 @@
 # Cloud Configuration
 # 酷安@阿巴酱(Petit Abba)
 # 所有路径都已验证(√)
-Version="202107211340"
+Version="202107260220"
 
 #绝对路径
 if [[ -d /data/adb/modules/Third_Party_Redirect ]]; then
@@ -50,6 +50,10 @@ OFF="
 请将此页面截图并说明问题
 
 更新内容:
+#202107260220
+Chrome /storage/emulated/0/Android/data/com.android.chrome/files/Download
+
+#202107211340
 存储空间隔离后的TIM目录
 存储空间隔离后的皮皮虾目录
 日志兼容Magisk_Lite
@@ -238,6 +242,7 @@ Download '360极速浏览器' '360LiteBrowser/download'
 Download '种子播放器' 'TorrentPlayer'
 Download '视频下载器' 'Android/data/com.video.download/files'
 Download '就爱看磁力' '就爱看磁力'
+Download 'Chrome' '/Android/data/com.android.chrome/files/Download'
 Download 'NeKogram' 'Android/data/nekox.messenger/files/documents'
 Download 'Nekogram.' 'Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Documents'
 Download 'Nekogram-X' 'NekoX'
