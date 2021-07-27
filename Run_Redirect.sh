@@ -2,7 +2,7 @@
 # Cloud Configuration
 # 酷安@阿巴酱(Petit Abba)
 # 所有路径都已验证(√)
-Version="202107260220"
+Version="202107280444"
 
 #绝对路径
 if [[ -d /data/adb/modules/Third_Party_Redirect ]]; then
@@ -50,6 +50,10 @@ OFF="
 请将此页面截图并说明问题
 
 更新内容:
+#202107280444
+腾讯文档(包含空间隔离目录) /storage/emulated/0/TencentDocs/download
+TapTap /storage/emulated/0/Android/data/com.taptap/files/Download/taptaptmp
+
 #202107260220
 Chrome /storage/emulated/0/Android/data/com.android.chrome/files/Download
 
@@ -213,10 +217,12 @@ Download 'TIM.' 'Tencent/TIMfile_recv'
 Download 'TIM-Old' 'tencent/TIMfile_recv'
 Download '微信' 'Android/data/com.tencent.mm/MicroMsg/Download'
 Download '微信.' 'tencent/MicroMsg/Download'
+Download '腾讯文档' 'TencentDocs/download'
 Download '酷安' 'Android/data/com.coolapk.market/files/Download'
 Download '迅雷' 'Android/data/com.xunlei.downloadprovider/files/ThunderDownload'
 Download 'ADM' 'ADM'
 Download 'IDM+' 'IDMP'
+Download 'TapTap' 'Android/data/com.taptap/files/Download/taptaptmp'
 Download '大白云' '大白·Cloud'
 Download '磁力云' 'happy.cloud'
 Download '豌豆荚' 'wandoujia/downloader/apk'
@@ -265,6 +271,7 @@ Download 'QQ极速版' 'com.tencent.qqlite/sdcard/tencent/QQfile_recv'
 Download 'TIM.' 'com.tencent.tim/sdcard/Tencent/TIMfile_recv'
 Download 'TIM-Old' 'com.tencent.tim/sdcard/tencent/TIMfile_recv'
 Download '微信.' 'com.tencent.mm/sdcard/tencent/MicroMsg/Download'
+Download '腾讯文档' 'com.tencent.docs/sdcard/TencentDocs/download'
 Download 'ADM' 'com.dv.adm/sdcard/ADM'
 Download 'IDM+' 'idm.internet.download.manager.plus/sdcard/IDMP'
 Download '文叔叔' 'com.wenshushu.app.android/sdcard/Wenshushu/Download'
@@ -301,6 +308,7 @@ Download 'QQ极速版' 'com.tencent.qqlite/cache/sdcard/tencent/QQfile_recv'
 Download 'TIM.' 'com.tencent.tim/cache/sdcard/Tencent/TIMfile_recv'
 Download 'TIM-Old' 'com.tencent.tim/cache/sdcard/tencent/TIMfile_recv'
 Download '微信.' 'com.tencent.mm/cache/sdcard/tencent/MicroMsg/Download'
+Download '腾讯文档' 'com.tencent.docs/cache/sdcard/TencentDocs/download'
 Download 'ADM' 'com.dv.adm/cache/sdcard/ADM'
 Download 'IDM+' 'idm.internet.download.manager.plus/cache/sdcard/IDMP'
 Download '文叔叔' 'com.wenshushu.app.android/cache/sdcard/Wenshushu/Download'
