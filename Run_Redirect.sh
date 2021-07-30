@@ -2,7 +2,7 @@
 # Cloud Configuration
 # 酷安@阿巴酱(Petit Abba)
 # 所有路径都已验证(√)
-Version="202107280444"
+Version="202107302049"
 
 #绝对路径
 if [[ -d /data/adb/modules/Third_Party_Redirect ]]; then
@@ -50,6 +50,9 @@ OFF="
 请将此页面截图并说明问题
 
 更新内容:
+#202107302049
+钉钉(包含空间隔离目录) /storage/emulated/0/DingTalk
+
 #202107280444
 腾讯文档(包含空间隔离目录) /storage/emulated/0/TencentDocs/download
 TapTap /storage/emulated/0/Android/data/com.taptap/files/Download/taptaptmp
@@ -220,6 +223,7 @@ Download '微信.' 'tencent/MicroMsg/Download'
 Download '腾讯文档' 'TencentDocs/download'
 Download '酷安' 'Android/data/com.coolapk.market/files/Download'
 Download '迅雷' 'Android/data/com.xunlei.downloadprovider/files/ThunderDownload'
+Download '钉钉' 'DingTalk'
 Download 'ADM' 'ADM'
 Download 'IDM+' 'IDMP'
 Download 'TapTap' 'Android/data/com.taptap/files/Download/taptaptmp'
@@ -271,6 +275,7 @@ Download 'QQ极速版' 'com.tencent.qqlite/sdcard/tencent/QQfile_recv'
 Download 'TIM.' 'com.tencent.tim/sdcard/Tencent/TIMfile_recv'
 Download 'TIM-Old' 'com.tencent.tim/sdcard/tencent/TIMfile_recv'
 Download '微信.' 'com.tencent.mm/sdcard/tencent/MicroMsg/Download'
+Download '钉钉' 'com.alibaba.android.rimet/sdcard/DingTalk'
 Download '腾讯文档' 'com.tencent.docs/sdcard/TencentDocs/download'
 Download 'ADM' 'com.dv.adm/sdcard/ADM'
 Download 'IDM+' 'idm.internet.download.manager.plus/sdcard/IDMP'
@@ -308,6 +313,7 @@ Download 'QQ极速版' 'com.tencent.qqlite/cache/sdcard/tencent/QQfile_recv'
 Download 'TIM.' 'com.tencent.tim/cache/sdcard/Tencent/TIMfile_recv'
 Download 'TIM-Old' 'com.tencent.tim/cache/sdcard/tencent/TIMfile_recv'
 Download '微信.' 'com.tencent.mm/cache/sdcard/tencent/MicroMsg/Download'
+Download '钉钉' 'com.alibaba.android.rimet/cache/sdcard/DingTalk'
 Download '腾讯文档' 'com.tencent.docs/cache/sdcard/TencentDocs/download'
 Download 'ADM' 'com.dv.adm/cache/sdcard/ADM'
 Download 'IDM+' 'idm.internet.download.manager.plus/cache/sdcard/IDMP'
