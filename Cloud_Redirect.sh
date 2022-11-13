@@ -45,13 +45,13 @@ do
 	if [[ ! -z $(which curl) ]]; then
 		curlwget="curl"
 		until [[ -f $MODDIR/Redirect.prop ]]; do
-			curl -O 'https://gitee.com/Petit-Abba/Third-Party-Redirect/raw/master/Redirect.prop' >/dev/null 2>&1
+			curl -O 'https://gitee.com/lucky__cat/Third-Party-Redirect/raw/master/Redirect.prop' >/dev/null 2>&1
 			sleep 2
 		done
 	elif [[ ! -z $(which wget) ]]; then
 		curlwget="wget"
 		until [[ -f $MODDIR/Redirect.prop ]]; do
-			wget 'https://gitee.com/Petit-Abba/Third-Party-Redirect/raw/master/Redirect.prop' >/dev/null 2>&1
+			wget 'https://gitee.com/lucky__cat/Third-Party-Redirect/raw/master/Redirect.prop' >/dev/null 2>&1
 			sleep 2
 		done
 	fi
@@ -68,9 +68,9 @@ do
 
 		until [[ -f $MODDIR/Run_Redirect.sh ]]; do
 			if [[ $curlwget == "curl" ]]; then
-				curl -O 'https://gitee.com/Petit-Abba/Third-Party-Redirect/raw/master/Run_Redirect.sh' >/dev/null 2>&1
+				curl -O 'https://gitee.com/lucky__cat/Third-Party-Redirect/raw/master/Run_Redirect.sh' >/dev/null 2>&1
 			elif [[ $curlwget == "wget" ]]; then
-				wget 'https://gitee.com/Petit-Abba/Third-Party-Redirect/raw/master/Run_Redirect.sh' >/dev/null 2>&1
+				wget 'https://gitee.com/lucky__cat/Third-Party-Redirect/raw/master/Run_Redirect.sh' >/dev/null 2>&1
 			fi
 			sleep 3
 		done
