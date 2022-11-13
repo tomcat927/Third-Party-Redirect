@@ -229,7 +229,7 @@ Download '迅雷' 'Android/data/com.xunlei.downloadprovider/files/ThunderDownloa
 Download '钉钉' 'DingTalk'
 Download 'ADM' 'ADM'
 Download 'IDM+' 'IDMP'
-Download '1DM' 'Download/1DMP
+Download '1DM' 'Download/1DMP'
 Download 'TapTap' 'Android/data/com.taptap/files/Download/taptaptmp'
 Download '大白云' '大白·Cloud'
 Download '磁力云' 'happy.cloud'
