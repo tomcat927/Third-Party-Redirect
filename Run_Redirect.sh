@@ -229,6 +229,7 @@ Download '迅雷' 'Android/data/com.xunlei.downloadprovider/files/ThunderDownloa
 Download '钉钉' 'DingTalk'
 Download 'ADM' 'ADM'
 Download 'IDM+' 'IDMP'
+Download '1DM' 'Download/1DMP
 Download 'TapTap' 'Android/data/com.taptap/files/Download/taptaptmp'
 Download '大白云' '大白·Cloud'
 Download '磁力云' 'happy.cloud'
@@ -237,6 +238,7 @@ Download '文叔叔' 'Wenshushu/Download'
 Download '百度App' 'Android/data/com.baidu.searchbox/files/downloads'
 Download '腾讯微云' '微云保存的文件'
 Download '天翼云盘' "ecloud"
+Download '123云盘' "123云盘"
 Download '阿里云盘' 'AliYunPan'
 Download '百度网盘' 'BaiduNetdisk'
 Download '曲奇云盘' 'quqi/pan/download'
@@ -259,6 +261,7 @@ Download 'Chrome' '/Android/data/com.android.chrome/files/Download'
 Download 'NeKogram' 'Android/data/nekox.messenger/files/documents'
 Download 'Nekogram.' 'Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Documents'
 Download 'Nekogram-X' 'NekoX'
+Download 'Telegram' 'Android/data/org.telegram.messenger/files/Telegram/Telegram Files'
 Download 'TG.' 'Telegram/Telegram Documents'
 Download 'TG-X' 'Android/data/org.thunderdog.challegram/files/documents'
 Download 'TG--X' 'Android/data/taipei.sean.challegram'
