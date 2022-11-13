@@ -237,8 +237,8 @@ Download '豌豆荚' 'wandoujia/downloader/apk'
 Download '文叔叔' 'Wenshushu/Download'
 Download '百度App' 'Android/data/com.baidu.searchbox/files/downloads'
 Download '腾讯微云' '微云保存的文件'
-Download '天翼云盘' "ecloud"
-Download '123云盘' "123云盘"
+Download '天翼云盘' 'ecloud'
+Download '123云盘' '123云盘'
 Download '阿里云盘' 'AliYunPan'
 Download '百度网盘' 'BaiduNetdisk'
 Download '曲奇云盘' 'quqi/pan/download'
