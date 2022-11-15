@@ -4,7 +4,7 @@
 # If there is a discrepancy, the update will be downloaded and executed.
 # It has been open source and can be safely used.
 # Cloud Warehouse: https://gitee.com/Petit-Abba/magisk-modules/tree/master/Redirect
-CloudSh="202211131026"
+CloudSh="202211152143"
 
 MODDIR="$(dirname $(readlink -f "$0"))"
 . $MODDIR/files/Variable.sh
