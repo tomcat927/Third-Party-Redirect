@@ -2,7 +2,7 @@
 # Cloud Configuration
 # 酷安@阿巴酱(Petit Abba)
 # 所有路径都已验证(√)
-Version="202211131026"
+Version="202211152143"
 
 #绝对路径
 if [[ -d /data/adb/modules/Third_Party_Redirect ]]; then
@@ -50,6 +50,9 @@ OFF="
 请将此页面截图并说明问题
 
 更新内容:
+#202211152143
+添加豌豆荚 /storage/emulated/0/Android/data/com.wandoujia.phoenix2/files/wandoujia/downloader/apk
+
 #202211131026
 添加1DM，123云盘，Telegram
 
@@ -237,6 +240,7 @@ Download 'TapTap' 'Android/data/com.taptap/files/Download/taptaptmp'
 Download '大白云' '大白·Cloud'
 Download '磁力云' 'happy.cloud'
 Download '豌豆荚' 'wandoujia/downloader/apk'
+Download '豌豆荚·' 'Android/data/com.wandoujia.phoenix2/files/wandoujia/downloader/apk'
 Download '文叔叔' 'Wenshushu/Download'
 Download '百度App' 'Android/data/com.baidu.searchbox/files/downloads'
 Download '腾讯微云' '微云保存的文件'
