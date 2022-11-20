@@ -395,7 +395,7 @@ Music "QQ音乐" "MV" "com.tencent.qqmusic/cache/sdcard/qqmusic/mv"
 Music "DJ多多" "歌曲" "DJDD/Download"
 Music "DJ多多" "歌曲" "com.shoujiduoduo.dj/sdcard/DJDD/Download"
 Music "DJ多多" "歌曲" "com.shoujiduoduo.dj/cache/sdcard/DJDD/Download"
-Music "MusicFree" "歌曲" Android/data/fun.upup.musicfree/files/download/music
+Music "MusicFree" "歌曲" "Android/data/fun.upup.musicfree/files/download/music"
 
 yywjj="/data/media/0/${path}/第三方应用下载目录/音乐(Music)"
 yywjj_a="/storage/emulated/0/${path}/第三方应用下载目录/音乐(Music)"
