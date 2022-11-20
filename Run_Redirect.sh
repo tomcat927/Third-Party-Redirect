@@ -25,9 +25,9 @@ DirectionalPath="/storage/emulated/0/${path}/第三方应用下载目录/-定向
 [[ ! -f ${DirectionalPath}/-定向黑名单.conf ]] && { echo '# 把不需要定向的文件夹名称填写进来（一行一个）
 
 OFF="
-#举两个例子
+#举一个例子（微信）
 微信
-网易云音乐
+#网易云音乐
 
 "' > ${DirectionalPath}/-定向黑名单.conf
 }
