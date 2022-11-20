@@ -50,6 +50,9 @@ OFF="
 请将此页面截图并说明问题
 
 更新内容:
+#202211202057
+添加MusicFree /storage/emulated/0/Android/data/fun.upup.musicfree/files/download/music
+
 #202211152143
 添加豌豆荚 /storage/emulated/0/Android/data/com.wandoujia.phoenix2/files/wandoujia/downloader/apk
 
@@ -392,6 +395,7 @@ Music "QQ音乐" "MV" "com.tencent.qqmusic/cache/sdcard/qqmusic/mv"
 Music "DJ多多" "歌曲" "DJDD/Download"
 Music "DJ多多" "歌曲" "com.shoujiduoduo.dj/sdcard/DJDD/Download"
 Music "DJ多多" "歌曲" "com.shoujiduoduo.dj/cache/sdcard/DJDD/Download"
+Music "MusicFree" "歌曲" Android/data/fun.upup.musicfree/files/download/music
 
 yywjj="/data/media/0/${path}/第三方应用下载目录/音乐(Music)"
 yywjj_a="/storage/emulated/0/${path}/第三方应用下载目录/音乐(Music)"
