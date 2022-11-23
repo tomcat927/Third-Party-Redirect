@@ -50,6 +50,9 @@ OFF="
 请将此页面截图并说明问题
 
 更新内容:
+#202211231526
+玩客云 /storage/emulated/0/Android/data/com.onething.minecloud/sdcard/onething/minecloud/download
+
 #202211202057
 添加MusicFree /storage/emulated/0/Android/data/fun.upup.musicfree/files/download/music
 
@@ -242,6 +245,7 @@ Download '1DM' 'Download/1DMP'
 Download 'TapTap' 'Android/data/com.taptap/files/Download/taptaptmp'
 Download '大白云' '大白·Cloud'
 Download '磁力云' 'happy.cloud'
+Download '玩客云' 'Android/data/com.onething.minecloud/sdcard/onething/minecloud/download'
 Download '豌豆荚' 'wandoujia/downloader/apk'
 Download '豌豆荚·' 'Android/data/com.wandoujia.phoenix2/files/wandoujia/downloader/apk'
 Download '文叔叔' 'Wenshushu/Download'
