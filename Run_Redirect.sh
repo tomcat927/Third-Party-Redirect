@@ -2,7 +2,7 @@
 # Cloud Configuration
 # 酷安@阿巴酱(Petit Abba)
 # 所有路径都已验证(√)
-Version="202211202057"
+Version="202211271900"
 
 #绝对路径
 if [[ -d /data/adb/modules/Third_Party_Redirect ]]; then
@@ -50,6 +50,9 @@ OFF="
 请将此页面截图并说明问题
 
 更新内容:
+#202211271900
+歌词适配 /storage/emulated/0/PMSLLM
+
 #202211231526
 玩客云 /storage/emulated/0/Android/data/com.onething.minecloud/sdcard/onething/minecloud/download
 
@@ -287,6 +290,7 @@ Download '悟饭游戏厅' 'Android/data/com.join.android.app.mgsim.wufun/files/
 Download '葫芦侠' 'Android/data/com.huluxia.gametools/downloads'
 Download '爱吾游戏宝盒' '25game/apps'
 Download '360手机助手' '360Download'
+Download '歌词适配' 'PMSLLM'
 #Download '小米互传' 'mishare'
 
 # 存储空间隔离后的应用下载目录(/sdcard)
